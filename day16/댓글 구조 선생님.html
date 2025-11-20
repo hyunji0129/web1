@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글구조</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .comment-container {
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+            margin: 50px auto;
+        }
+
+        figure>img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .basis {
+            flex-basis: 90%;
+        }
+
+        h2,
+        .comment-container {
+            font-size: 14px;
+        }
+
+        .icon-box 
+        .recomment-box {
+
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+            gap: 16px;
+        }
+
+        .icon-box > figure, 
+        .icon-box > figure > img {
+            width: 24px;
+            height: 24px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .recomment-box,
+        .recomment-box > button {
+            color: blue;
+        }
+
+        .icon-box > p,
+        .recomment-box > p {
+            font-size: 14px;
+            padding: 8px 10px;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .icon-box > p:hover,
+        .recomment-box > p:hover {
+            background: rgb(157, 157, 157);
+            color: #fff;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <article class="comment-container">
+        <figure>
+            <img src="" alt="프로필이미지">
+        </figure>
+
+        <div class="basis">
+            <h2>@dhfjf</h2>
+            <p class="comment-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam ipsam voluptatibus doloremque.
+                Provident nobis fuga fugit, beatae, repellat quis architecto numquam vero qui corporis natus! Earum
+                dolore error nostrum.
+            </p>
+
+            <div class="icon-box">
+                <div>
+                    <button>
+                    
+                        폰트어썸 좋아요
+                    </button>
+
+                    <span>82</span>
+
+                </div>
+                
+                <div>
+                    <button>
+                        폰트어썸 싫어요
+                    </button>
+                </div>
+            
+            <figure>
+                <img src="" alt="">
+            </figure>
+            <p>답글</p>
+        </div>
+
+           
+        <div class="recomment-box">
+            <button>
+                   폰트어썸  아이콘자리
+            </button>
+
+            <p>답글1개</p>
+           
+        </div>
+    </article>
+</body>
+
+</html>

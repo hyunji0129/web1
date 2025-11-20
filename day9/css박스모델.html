@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css박스모델</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .box {
+            width: 500px;
+            height: 300px;
+            background-color: aqua;
+            margin: 5px 10px 15px 20px;
+            border: 5px solid #000;
+            
+            
+
+            /*border-top: 5px solid red ;
+            border-right: 10px dotted darkblue;
+            border-bottom: 10px dashed green;
+            */
+            padding: 50px;
+        }
+        
+        .box_size {
+            background-color: pink;
+            padding: 30px;
+            margin: 30px;
+            border: 30px solid palevioletred;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        css박스모델 실습
+    </div>
+
+    <div class="box_size"></div>
+</body>
+</html>

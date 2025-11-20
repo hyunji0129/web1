@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(12, 12, 66);
+        }
+
+        .menu-hover-effect > ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-hover-effect > ul > li {
+            border-right: 1px solid #fff;
+            border-left: 1px solid #fff;
+            margin: 16px;
+            
+        }
+
+        .menu-hover-effect > ul > li > a {
+            text-decoration: none;
+            color: #fff ;
+            font-size: 24px;
+            padding: 20px 30px;
+            position: relative;
+        }
+
+        .menu-hover-effect a::before {
+            content: "";
+            width: 100%;
+            background-color: #fff;
+            height: 1px;
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            margin: 0px;
+        }
+        
+       
+        .menu-hover-effect a::after {
+            content: "";
+            width: 100%;
+            background-color: #fff;
+            height: 1px;
+            display: block;
+            position: absolute;
+            top: 55px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+       /* .menu-hover-effect a:hover::after {
+            top: 100%;
+          
+            
+        }*/
+
+        
+        .menu-hover-effect > ul > li :hover {
+            border:  hidden;
+            transform: 0.3s;
+        }
+     
+    </style>
+</head>
+<body>
+    <nav class="menu-hover-effect">
+        <ul>
+            <li>
+                <a href="">About</a>
+            </li>    
+            <li>
+                <a href="">Content</a>
+            </li>    
+            <li>
+                <a href="">Mail</a>
+            </li>    
+        </ul>
+        
+    </nav>
+</body>
+</html>

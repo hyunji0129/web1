@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <style>
+        .mid ~ li {
+            background-color: yellow;
+        }
+
+        .china_food + li {
+            background-color: red;
+        }
+         
+        .p_tag, h2,
+        .span_tag {
+            background-color: aqua;
+            /*,로 구분해주는 것은 그룹 선택자*/
+        }
+        .menu > li:last-child {
+            color: red;
+        }
+        .menu > li:nth-child(2) {
+            color: yellowgreen;
+        }
+
+        .web > li:nth-child(even) {
+            color: aquamarine;
+        }
+
+        .web > li:nth-child(odd) {
+            color: purple;
+        }
+
+        .web > li:last-child {
+            color: #000;
+        }
+    </style>
+
+
+</head>
+<body>
+    <ul class="web">
+        <li>HTML</li>
+        <li>css</li>
+        <li class="mid">javascript</li>
+        <li>ux/ui design</li>
+        <li>portfolio</li>
+        <li>portfolio</li>
+        <li>portfolio</li>
+        <li>portfolio</li>
+    </ul>
+
+     <ul class="menu">
+        <li class="china_food"></li>
+        <li> 짬뽕</li>
+        <li>탕수육</li>
+        <li>팔보채</li>
+        <li>유산슬</li>
+     </ul>
+
+     <div>
+        <p class="p_tag">피태그</p>
+        <h2>해딩2</h2>
+        <span class="span_tag"> 스펜태그</span>
+     </div>
+</body> 
+</html>
